@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+img{
+    width: 128px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 5px black;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border: 5px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.keroro {
+    border-top: 10px solid #b22222;
+}
+
+.giroro {
+    border-top: 10px solid #3cb371;
+}
+
+.kururu {
+    border-top: 10px solid #4682b4;
+}
+
+.dororo {
+    border-top: 10px solid #a0522d;
+}
+
+.tamama {
+    border-top: 10px solid #ff6347;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.card {
+    flex-direction: row;
+    text-align: left;
+}
+
+.card img {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+}
