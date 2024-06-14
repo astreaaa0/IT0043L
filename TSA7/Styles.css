@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Jujutsu Kaine, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.home-section {
+    grid-column: 1 / 2;
+    background-color: white;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.home-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.sidebar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 20px;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.characters-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.character {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.gallery {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.articles {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .articles {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.logo{
+
+    font-family: Jujutsu Kaisen ;
+    font-size: 2pc;
+    
+}
