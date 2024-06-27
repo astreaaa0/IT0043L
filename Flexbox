@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const box1GrowInput = document.getElementById('box1Grow');
     const box2GrowInput = document.getElementById('box2Grow');
     const box3GrowInput = document.getElementById('box3Grow');
+    const resetFlexboxButton = document.getElementById('resetFlexbox');
 
     const updateFlexContainer = () => {
         flexContainer.style.gap = `${gapInput.value}px`;
@@ -55,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
         box1GrowInput.value = 1;
         box2GrowInput.value = 1;
         box3GrowInput.value = 1;
+        updateFlexGrow();
+    });
+
+    resetFlexboxButton.addEventListener('click', () => {
+        gapInput.value = 0;
+        flexContainer.style.flexDirection = 'row';
+        flexContainer.style.justifyContent = 'flex-start';
+        flexContainer.style.alignItems = 'flex-start';
+        box1GrowInput.value = 0;
+        box2GrowInput.value = 0;
+        box3GrowInput.value = 0;
+        updateFlexContainer();
         updateFlexGrow();
     });
 });
